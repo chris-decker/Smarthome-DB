@@ -1,0 +1,130 @@
+--create accounts using stored procedure
+execute newaccount 'test1@test.com', 'testpass1', 1;
+execute newaccount 'test2@test.com', 'testpass2', 1;
+execute newaccount 'test1342@test.com', 'testpassre1', 0;
+execute newaccount 'test22@test.com', 'testpasgegs1', 1;
+execute newaccount 'test441@test.com', 'testpasgzgs1', 0;
+execute newaccount 'test222@test.com', 'testpazgsdss1', 0;
+execute newaccount 'test155@test.com', 'testpsgass1', 1;
+execute newaccount 'test242@test.com', 'tessgstpass1', 1;
+execute newaccount 'test122@test.com', 'testdsgDpass1', 0;
+execute newaccount 'test22323@test.com', 'testpsdgass1', 1;
+execute newaccount 'test231@test.com', 'testpdsgdsass1', 1;
+execute newaccount 'test2523@test.com', 'testpdsgsGass1', 0;
+execute newaccount 'test1523@test.com', 'testpassfhddf1', 1;
+execute newaccount 'test253235@test.com', 'testpassfhzd1', 0;
+execute newaccount 'test166346@test.com', 'taffaestpass1', 1;
+execute newaccount 'test23634@test.com', 'testpasfhdds1', 1;
+execute newaccount 'test1647868@test.com', 'testdgspass1', 0;
+--create payment method types using insert statements
+insert into paymentmethodtype (pmtypedesc) values ('Credit Card');
+insert into paymentmethodtype (pmtypedesc) values ('Paypal');
+insert into paymentmethodtype (pmtypedesc) values ('Bank Account');
+--create credit card payment methods using stored procedure
+execute addcreditcard 1,0,'testf','testl','92701',2345678912345670,12,23;
+execute addcreditcard 2,1,'dvss','yiadi','12345',2345678913345670,1,19;
+execute addcreditcard 3,1,'vds','dyyerutj','12346',2345678912665670,2,20;
+execute addcreditcard 4,1,'vdsVSD','jffuyf','12347',2345378912345670,3,18;
+execute addcreditcard 5,1,'gdfhd','jfxkfjx','12348',2345678912375670,4,21;
+execute addcreditcard 6,0,'fbdh','zsdtzfhd','12349',2345678912995670,5,22;
+execute addcreditcard 7,0,'bzsdgz','xhfgyxd','12350',2345678542345670,6,23;
+execute addcreditcard 8,0,'xvzs','fzgzdg','12351',6789012555643900,7,19;
+execute addcreditcard 9,0,'ndfzh','zfzdgfdhd','12352',6789012345655900,8,20;
+execute addcreditcard 10,0,'fzhzdfh','zhdxhjcxh','12353',6789552345666900,9,18;
+execute addcreditcard 11,1,'xvxz','xhxfguyf','12354',6789066345643900,10,21;
+execute addcreditcard 12,0,'vxdgds','ftufcff','12355',6789012665643900,11,22;
+execute addcreditcard 13,1,'hgzfgxz','fxjfcccccccccc','12356',6789012345333900,12,23;
+execute addcreditcard 14,1,'xgzxz','cjfxtdt','12357',1234567895333970,9,19;
+execute addcreditcard 15,0,'zsggst','hxjawww','12358',1234533895261970,10,20;
+execute addcreditcard 16,0,'ghfyfg','sgszhf','12359',1234567895261970,11,18;
+execute addcreditcard 17,1,'hhtxyxd','hgfyfdxbc','12360',1234567335261970,12,21;
+--create paypal payment methods using insert statements
+insert into paymentmethod values( 3,2,0);
+insert into paymentmethod values( 4,2,0);
+insert into paymentmethod values( 5,2,0);
+insert into paymentmethod values( 7,2,0);
+insert into paymentmethod values( 10,2,0);
+insert into paymentmethod values( 11,2,0);
+insert into paymentmethod values( 15,2,0);
+insert into paymentmethod values( 16,2,0);
+insert into paypal values( 18,'test1342@test.com');
+insert into paypal values( 19,'test22@test.com');
+insert into paypal values( 20,'test441@test.com');
+insert into paypal values( 21,'test155@test.com');
+insert into paypal values( 22,'test15vzs5@test.com');
+insert into paypal values( 23,'test15vsszsd5@test.com');
+insert into paypal values( 24,'test15sd5@test.com');
+insert into paypal values( 25,'tesaaat155@test.com');
+--create bank account payment methods using insert statements
+insert into paymentmethod values( 1,3,0);
+insert into paymentmethod values( 2,3,0);
+insert into paymentmethod values( 3,3,0);
+insert into paymentmethod values( 8,3,0);
+insert into paymentmethod values( 10,3,0);
+--create alert actions using insert statements
+insert into alertaction (accountid) values (1);
+insert into alertaction (accountid) values (2);
+insert into alertaction (accountid) values (3);
+insert into alertaction (accountid) values (4);
+insert into alertaction (accountid) values (5);
+insert into alertaction (accountid) values (6);
+insert into alertaction (accountid) values (7);
+insert into alertaction (accountid) values (8);
+insert into alertaction (accountid) values (9);
+insert into alertaction (accountid) values (10);
+insert into alertaction (accountid) values (11);
+insert into alertaction (accountid) values (12);
+insert into alertaction (accountid) values (13);
+insert into alertaction (accountid) values (14);
+insert into alertaction (accountid) values (15);
+insert into alertaction (accountid) values (16);
+insert into alertaction (accountid) values (17);
+--create zip codes using insert statements
+insert into currenttemp (zipcode) values ('92710');
+insert into currenttemp (zipcode) values ('07302');
+insert into currenttemp (zipcode) values ('90210');
+insert into currenttemp (zipcode) values ('90802');
+insert into currenttemp (zipcode) values ('92826');
+insert into currenttemp (zipcode) values ('44521');
+insert into currenttemp (zipcode) values ('33621');
+insert into currenttemp (zipcode) values ('93685');
+insert into currenttemp (zipcode) values ('22156');
+insert into currenttemp (zipcode) values ('00927');
+insert into currenttemp (zipcode) values ('33826');
+insert into currenttemp (zipcode) values ('11865');
+insert into currenttemp (zipcode) values ('11009');
+insert into currenttemp (zipcode) values ('66853');
+insert into currenttemp (zipcode) values ('88201');
+insert into currenttemp (zipcode) values ('33589');
+insert into currenttemp (zipcode) values ('11269');
+--create alerts using insert statements
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (1,'92710',1,86,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (2,'07302',2,32,0,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (3,'90210',3,98,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (4,'90802',4,67,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (5,'92826',5,12,0,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (6,'44521',6,1,0,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (7,'33621',7,88,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (8,'93685',8,86,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (9,'22156',9,86,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (10,'00927',10,32,0,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (11,'33826',11,98,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (12,'11865',12,67,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (13,'11009',13,12,0,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (14,'66853',14,1,0,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (15,'88201',15,88,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (16,'33589',16,86,1,0);
+insert into alert (accountid, zipcode, actionid, temperature,ismax,triggered) values (17,'11269',17,55,0,0);
+--update alert triggers using alter statements
+update alert set triggered = 1 where alertid = 1;
+update alert set triggered = 1 where alertid = 7;
+update alert set triggered = 1 where alertid = 8;
+update alert set triggered = 1 where alertid = 9;
+update alert set triggered = 1 where alertid = 11;
+update alert set triggered = 1 where alertid = 12;
+update alert set triggered = 1 where alertid = 13;
+update alert set triggered = 1 where alertid = 16;
+update alert set triggered = 1 where alertid = 17;
+
+
+
